@@ -1,0 +1,219 @@
+/* main.css - AprendeLince (TecNM Celaya)
+   Paleta: verde oscuro #1a4130, crema #faf8da, verde medio #3b7d5c, fondo #0f1f18 */
+
+.root {
+    -fx-background-color: #0f1f18;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-font-size: 14px;
+}
+
+/* Etiquetas y textos globales (el texto de un Label lo dibuja el nodo .text con -fx-fill) */
+.label, .text {
+    -fx-text-fill: #faf8da;
+    -fx-fill: #faf8da;
+}
+
+/* Paneles contenedores */
+.panel-secundario {
+    -fx-background-color: #1a4130;
+    -fx-border-color: #2f6b50;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+/* Campos de entrada */
+.text-field, .text-area, .password-field, .form-control {
+    -fx-background-color: #143323;
+    -fx-text-fill: #faf8da;
+    -fx-prompt-text-fill: #8fa396;
+    -fx-border-color: #3b7d5c;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+}
+
+.text-field:focused, .text-area:focused, .password-field:focused, .form-control:focused {
+    -fx-border-color: #faf8da;
+}
+
+/* Tablas */
+.table-view {
+    -fx-background-color: #0f1f18;
+    -fx-control-inner-background: #1a4130;
+    -fx-table-cell-border-color: #2f6b50;
+    -fx-border-color: #2f6b50;
+}
+
+.table-view .column-header-background { -fx-background-color: #143323; }
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: #143323;
+    -fx-size: 35;
+    -fx-border-color: #3b7d5c;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #faf8da;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell { -fx-background-color: #1a4130; }
+.table-row-cell:odd { -fx-background-color: #1f4a37; }
+.table-row-cell:selected { -fx-background-color: #3b7d5c; }
+.table-cell { -fx-text-fill: #faf8da; }
+
+/* Botones */
+.button, .btn, .btn-default {
+    -fx-background-color: #2f6b50;
+    -fx-text-fill: #faf8da;
+    -fx-border-color: #3b7d5c;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+    -fx-cursor: hand;
+}
+
+.button:hover, .btn:hover, .btn-default:hover {
+    -fx-background-color: #3b7d5c;
+    -fx-text-fill: #faf8da;
+}
+
+.button:focused, .btn:focused, .btn-default:focused {
+    -fx-background-color: #3b7d5c;
+    -fx-text-fill: #faf8da;
+    -fx-border-color: #faf8da;
+}
+
+.button:pressed, .btn:pressed, .btn-default:pressed {
+    -fx-background-color: #1f4a37;
+    -fx-text-fill: #faf8da;
+    -fx-border-color: #3b7d5c;
+}
+
+/* Botones de acción */
+.btn-primary { -fx-background-color: #3b7d5c; -fx-border-color: transparent; }
+.btn-primary:hover { -fx-background-color: #2f6b50; }
+.btn-success { -fx-background-color: #4caf50; -fx-border-color: transparent; }
+.btn-success:hover { -fx-background-color: #388e3c; }
+.btn-danger { -fx-background-color: #f44336; -fx-border-color: transparent; }
+.btn-danger:hover { -fx-background-color: #d32f2f; }
+.btn-warning { -fx-background-color: #ff9800; -fx-border-color: transparent; }
+.btn-warning:hover { -fx-background-color: #f57c00; }
+
+/* ComboBox y listas desplegables */
+.combo-box, .combo-box-base {
+    -fx-background-color: #143323;
+    -fx-border-color: #3b7d5c;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #faf8da;
+    -fx-background-color: transparent;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #143323;
+    -fx-border-color: #3b7d5c;
+    -fx-border-width: 1px;
+}
+
+.combo-box-popup .list-view .list-cell {
+    -fx-background-color: #143323;
+    -fx-text-fill: #faf8da;
+    -fx-padding: 5 10 5 10;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover,
+.combo-box-popup .list-view .list-cell:filled:selected {
+    -fx-background-color: #3b7d5c;
+    -fx-text-fill: #faf8da;
+}
+
+/* Pestañas (TabPane) */
+.tab-pane { -fx-background-color: transparent; }
+.tab-pane .tab-header-area .tab-header-background { -fx-background-color: #0f1f18; }
+
+.tab-pane .tab {
+    -fx-background-color: #163a28;
+    -fx-background-radius: 5 5 0 0;
+    -fx-padding: 7 18 7 18;
+}
+
+.tab-pane .tab:hover { -fx-background-color: #2a5a45; }
+.tab-pane .tab:selected { -fx-background-color: #3b7d5c; -fx-background-radius: 5 5 0 0; }
+
+.tab-pane .tab .tab-label {
+    -fx-text-fill: #b7bfae;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.tab-pane .tab:selected .tab-label { -fx-text-fill: #faf8da; }
+
+.tab-pane .tab-content-area {
+    -fx-background-color: #1a4130;
+    -fx-border-color: #2f6b50;
+    -fx-border-width: 1;
+    -fx-padding: 4;
+}
+
+/* Gráficas */
+.chart-title { -fx-text-fill: #faf8da; }
+.axis-label, .chart-legend .label { -fx-text-fill: #faf8da; }
+.axis { -fx-tick-label-fill: #faf8da; }
+.chart-plot-background { -fx-background-color: #1a4130; }
+.chart-vertical-grid-lines, .chart-horizontal-grid-lines { -fx-stroke: #2f6b50; }
+.chart-legend { -fx-background-color: transparent; }
+
+/* =========================================
+   Login: panel izquierdo (verde) y derecho (crema)
+   ========================================= */
+.login-left .label, .login-left .label .text {
+    -fx-text-fill: #faf8da;
+    -fx-fill: #faf8da;
+}
+
+/* Etiquetas del panel crema: texto verde oscuro (incluye el mensaje de error) */
+.login-right .label, .login-right .label .text {
+    -fx-text-fill: #1a4130;
+    -fx-fill: #1a4130;
+}
+
+.login-right .text-field, .login-right .password-field {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #1a4130;
+    -fx-prompt-text-fill: #7a8f84;
+    -fx-border-color: #1a4130;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+}
+
+.login-right .text-field:focused, .login-right .password-field:focused {
+    -fx-border-color: #3b7d5c;
+    -fx-border-width: 2;
+}
+
+/* Botón principal: verde oscuro con texto crema */
+.login-right .btn-primary, .login-right .button.btn-primary {
+    -fx-background-color: #1a4130;
+    -fx-text-fill: #faf8da;
+}
+.login-right .btn-primary .text { -fx-fill: #faf8da; }
+.login-right .btn-primary:hover { -fx-background-color: #3b7d5c; }
+
+/* Botón secundario (Crear Cuenta): transparente con borde verde */
+.login-right .btn-default {
+    -fx-background-color: transparent;
+    -fx-text-fill: #1a4130;
+    -fx-border-color: #1a4130;
+}
+.login-right .btn-default .text { -fx-fill: #1a4130; }
+.login-right .btn-default:focused { -fx-background-color: transparent; }
+.login-right .btn-default:hover { -fx-background-color: #1a4130; }
+.login-right .btn-default:hover .text { -fx-fill: #faf8da; }
+
+/* Enlaces del panel crema (¿Eres tutor? / Volver al inicio de sesión) */
+.login-right .hyperlink, .login-right .hyperlink .text {
+    -fx-text-fill: #3b7d5c;
+    -fx-fill: #3b7d5c;
+}
